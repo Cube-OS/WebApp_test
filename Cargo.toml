@@ -1,0 +1,17 @@
+[package]
+name = "yew-app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = {version = "0.19.3" }
+yew-router = "0.16.0"
+wasm-bindgen = "0.2.87"
+wasm-bindgen-futures = "0.4.37"
+web-sys = {version = "0.3.64", features = ["HtmlSelectElement"]}
+lazy_static = "1.4.0"
+once_cell = "1.7.2"
+async-std = "1.12.0"
+webapp-macro = { path = "../webapp-macro"}

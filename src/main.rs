@@ -1,0 +1,5 @@
+mod web;
+mod app;
+fn main() {
+    yew::start_app::<app::Main>();
+}

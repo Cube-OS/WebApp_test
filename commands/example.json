@@ -1,0 +1,24 @@
+# struct Get {
+    get: ExampleEnum,
+}
+
+# struct Error {}
+
+# struct TestVec {
+    input: Vec<u8>,
+}
+
+# struct TestStruct {
+    in: StructTest,
+}
+
+enum ExampleEnum {
+    Zero,One,All,
+}
+
+struct StructTest {
+    in1: u8,
+    in2: String,
+    in3: bool,
+    in4: f64,
+}

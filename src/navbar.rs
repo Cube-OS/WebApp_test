@@ -1,6 +1,6 @@
 use yew::prelude::*;
 use yew_router::{history::History, prelude::RouterScopeExt};  // Import necessary traits and structs
-use crate::web::*;  // Import your Route enum
+use crate::web::{Route};  // Import your Route enum
 
 pub struct NavbarComponent;
 
@@ -16,8 +16,8 @@ impl Component for NavbarComponent {
         let history = ctx.link().history().unwrap();  // Create a 'history' object
         let history_clone = history.clone();
         let onclick = Callback::from(move |_: MouseEvent| {
-            let mut input = INPUT.lock().unwrap();
-            *input = "".to_string();
+            // let mut app_state = APP_STATE.lock().unwrap();
+            // app_state.reset();
             history_clone.push(Route::Home);
         });        
         
